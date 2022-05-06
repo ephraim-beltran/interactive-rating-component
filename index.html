@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animation.css">
+    <title>Interactive Rating Component</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="text-white">Interactive Rating Component</h1>
+        </header>
+        <div id="card-rating" class="card">
+            <div class="rating-star justify-content-center align-items-center">&#11088;</div>
+            <h2 class="text-white">How did we do?</h2>
+            <p class="text-primary">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+            <div class="rating">
+                <input type="radio" name="rating" id="ratingNone" value="0" disable checked>
+                <input name="rating" type="radio" id="star1" value="1">
+                <label class="rating-star text-primary justify-content-center align-items-center" for="star1">1</label>
+                <input name="rating" type="radio" id="star2" value="2">
+                <label class="rating-star text-primary justify-content-center align-items-center" for="star2">2</label>
+                <input name="rating" type="radio" id="star3" value="3">
+                <label class="rating-star text-primary justify-content-center align-items-center" for="star3">3</label>
+                <input name="rating" type="radio" id="star4" value="4">
+                <label class="rating-star text-primary justify-content-center align-items-center" for="star4">4</label>
+                <input name="rating" type="radio" id="star5" value="5">
+                <label class="rating-star text-primary justify-content-center align-items-center" for="star5">5</label>
+            </div>
+            <button class="text-white">Submit</button>
+        </div>
+
+        <div id="card-tnx" class="card align-items-center hidden">
+            <img src="images/illustration-thank-you.svg" alt="Thank You">
+            <div id="rating-selection" class="sub-box text-info text-align-center">
+                Please rate our support first.
+            </div>
+            <h2 class="text-white">Thank you!</h2>
+            <p class="text-primary text-align-center">
+                We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!
+            </p>
+        </div>
+
+
+        <footer class="text-align-center text-white">Code written by Ephraim for Frontend Mentor Challenge</footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
